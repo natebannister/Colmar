@@ -1,0 +1,37 @@
+/*Universal styling*/
+
+html {
+    font-size: 16px;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*header/nav styling*/
+
+header {
+    height: 4rem;
+    position: fixed;
+}
+
+header #header-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header #logo {
+    height: 2rem;
+    padding-left: 1.5rem;
+}
+
+header nav {
+    padding-right: 1.5rem;
+}
+
+header p {
+    padding-left: 1rem;
+}
