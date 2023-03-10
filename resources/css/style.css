@@ -2,6 +2,7 @@
 
 html {
     font-size: 16px;
+    background-color: white;
 }
 
 main {
@@ -16,27 +17,24 @@ header {
     position: fixed;
     width: 100%;
     z-index: 1;
-}
-
-header .flex-container {
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 0.25rem solid black;
 }
 
-header #header-content {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-header #logo {
+#logo {
     height: 2rem;
     padding-left: 1.5rem;
+    display: flex;
+    align-items: center;   
 }
 
-header nav {
+nav {
     padding-right: 1.5rem;
+    display: flex;
+    align-items: center;
 }
 
 header p {
@@ -47,9 +45,6 @@ header p {
 
 #banner {
     background-color: lightgray;
-}
-
-#banner {
     display: flex;
     align-items: center;
 }
@@ -68,4 +63,128 @@ header p {
     padding: 0.5rem 0;
     color: white;
     background-color: black;
+}
+
+/*Info styling - still need to style the 'Read more' pieces*/
+
+#info {
+    display: flex;
+    align-items: flex-start;
+}
+
+#info-left {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    padding: 2rem 1.5rem;
+}
+
+#info-left figure {
+    padding-bottom: 2rem;
+}
+
+#info h1 {
+    padding-bottom: 1.5rem;
+}
+
+#info-left h3 {
+    padding-bottom: 1.5rem;
+}
+
+#info-right {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+    padding: 2rem 1.5rem 2rem 0;
+}
+
+.right-box {
+    display: flex;
+}
+
+#info-right figure {
+    padding: 0 1rem 1rem 1rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    justify-content: center;
+}
+
+.content p {
+    padding-top: 0.5rem;
+}
+
+/*Courses styling - will need to be redone in Grid and still need to do padding*/
+
+#courses {
+    background-color: lightgray;
+    text-align: center;
+}
+
+#courses h1 {
+    padding-top: 2rem;
+}
+
+#courses-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 3.5rem;
+    justify-content: center;
+}
+
+.courses-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 33%;
+}
+
+.courses-content {
+    background-color: white;
+    text-align: left;
+    padding: 1rem 1rem 1.5rem 1rem;
+}
+
+/*Thesis styling still need to check padding*/
+
+#thesis {
+    display: flex;
+    align-items: flex-start;
+}
+
+#thesis-left {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    padding: 2rem 1.5rem;
+}
+
+#thesis-left figure {
+    padding-bottom: 2rem;
+}
+
+#thesis h1 {
+    padding-bottom: 1.5rem;
+}
+
+#thesis-left h3 {
+    padding-bottom: 1.5rem;
+}
+
+#thesis-right {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+    padding: 2rem 1.5rem 2rem 0;
+}
+
+#thesis-right figure {
+    padding: 0 1rem 1rem 1rem;
 }
