@@ -4,10 +4,9 @@ html {
     font-size: 16px;
 }
 
-.flex-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+main {
+    position: relative;
+    top: 4rem;
 }
 
 /*header/nav styling*/
@@ -15,6 +14,14 @@ html {
 header {
     height: 4rem;
     position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+header .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header #header-content {
@@ -34,4 +41,31 @@ header nav {
 
 header p {
     padding-left: 1rem;
+}
+
+/*Banner styling*/
+
+#banner {
+    background-color: lightgray;
+}
+
+#banner {
+    display: flex;
+    align-items: center;
+}
+
+#banner figure {
+    padding: 2rem 1.5rem;
+    width: 60%;
+}
+
+#banner div {
+    padding-right: 1.5rem;
+}
+
+#banner p {
+    text-align: center;
+    padding: 0.5rem 0;
+    color: white;
+    background-color: black;
 }
