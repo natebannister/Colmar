@@ -7,6 +7,9 @@
     <!--Add a favicon at some point-->
     <link href="resources/css/reset.css" rel="stylesheet">
     <link href="resources/css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -15,7 +18,7 @@
         <div id="logo">
             <img src="resources/images/ic-logo.svg">
             <span>COLMAR</span>
-            <span>ACADEMY</span>
+            <span id="logo-right">ACADEMY</span>
         </div>
         <nav>
             <p>On Campus</p>
@@ -148,34 +151,43 @@
         </section>
 
         <section id="thesis">
-            <div id="thesis-left" >
-                <figure>
-                    <video controls src="resources/videos/thesis.mp4" type="video/mp4">Video not available</video>
-                </figure>
-                <h1>Reimagine urban</h1>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h3>
-            </div>
-            <div id="thesis-right">
-                <div class="right-box">
+            <h1>Thesis exhibit</h1>
+            <div id="thesis-container">
+                <div id="thesis-left" >
                     <figure>
-                        <img src="resources/images/thesis-fisma.jpg">
+                        <video controls src="resources/videos/thesis.mp4" type="video/mp4">Video not available</video>
                     </figure>
-                    <div class="content">
-                        <h3>Fisma: Design and Prototype</h3>
-                        <p>Designer showcase of new prototype product</p>
-                    </div>
+                    <h1>Reimagine urban</h1>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h3>
                 </div>
-                <div class="right-box">
-                    <figure>
-                        <img src="resources/images/thesis-now-and-then.jpg">
-                    </figure>
-                    <div class="content">
-                        <h3>Now and then</h3>
-                        <p>Research study about New York</p>
+                <div id="thesis-right">
+                    <div class="right-box">
+                        <figure>
+                            <img src="resources/images/thesis-fisma.jpg">
+                        </figure>
+                        <div class="content">
+                            <h3>Fisma: Design and Prototype</h3>
+                            <p>Designer showcase of new prototype product</p>
+                        </div>
+                    </div>
+                    <div class="right-box">
+                        <figure>
+                            <img src="resources/images/thesis-now-and-then.jpg">
+                        </figure>
+                        <div class="content">
+                            <h3>Now and then</h3>
+                            <p>Research study about New York</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <footer>
+            <p class="footer-left">&copy 2016 Colmar Academy. All rights reserved</p>
+            <p class="footer-right">Terms</p>
+            <p class="footer-right">Privacy</p>
+        </footer>
 
     </main>
 

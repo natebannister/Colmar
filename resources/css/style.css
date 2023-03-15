@@ -3,11 +3,20 @@
 html {
     font-size: 16px;
     background-color: white;
+    font-family: Roboto;
 }
 
 main {
     position: relative;
     top: 4rem;
+}
+
+h5 {
+    padding: 1rem 0;
+}
+
+h1 {
+    font-weight: bold;
 }
 
 /*header/nav styling*/
@@ -21,7 +30,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 0.25rem solid black;
+    border-bottom: 0.1rem solid lightgray;
 }
 
 #logo {
@@ -29,6 +38,14 @@ header {
     padding-left: 1.5rem;
     display: flex;
     align-items: center;   
+}
+
+#logo span {
+    font-weight: bold;
+}
+
+#logo-right {
+    color: gray;
 }
 
 nav {
@@ -152,7 +169,12 @@ header p {
 
 /*Thesis styling still need to check padding*/
 
-#thesis {
+#thesis h1 {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+#thesis-container {
     display: flex;
     align-items: flex-start;
 }
@@ -169,10 +191,6 @@ header p {
     padding-bottom: 2rem;
 }
 
-#thesis h1 {
-    padding-bottom: 1.5rem;
-}
-
 #thesis-left h3 {
     padding-bottom: 1.5rem;
 }
@@ -187,4 +205,23 @@ header p {
 
 #thesis-right figure {
     padding: 0 1rem 1rem 1rem;
+}
+
+/*Footer styling*/
+
+footer {
+    border-top: solid 1px lightgray;
+    width: 98%;
+    margin: 0 auto;
+}
+
+.footer-left {
+    display: inline-block;
+    padding: 1rem 0 1rem 1.5rem;
+}
+
+.footer-right {
+    display: inline-block;
+    padding: 1rem 1.5rem 1rem 0;
+    float: right;
 }
