@@ -82,7 +82,7 @@ header p {
     background-color: black;
 }
 
-/*Info styling - still need to style the 'Read more' pieces*/
+/*Info styling*/
 
 #info {
     display: flex;
@@ -114,15 +114,26 @@ header p {
     flex-direction: column;
     align-items: flex-start;
     width: 40%;
-    padding: 2rem 1.5rem 2rem 0;
+    padding: 2rem 0;
+    border-left: 0.1rem solid lightgray;
 }
 
 .right-box {
     display: flex;
+    padding-right: 1rem;
 }
 
-#info-right figure {
-    padding: 0 1rem 1rem 1rem;
+.right-box figure {
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+#middle-right-box {
+    border-top: 0.1rem solid lightgray;
+    border-bottom: 0.1rem solid lightgray;
+}
+
+#top-right-box-figure {
+    padding-top: 0;
 }
 
 .content {
@@ -136,7 +147,12 @@ header p {
     padding-top: 0.5rem;
 }
 
-/*Courses styling - will need to be redone in Grid and still need to do padding*/
+.content .read-more {
+    color: cornflowerblue;
+    font-weight: bold;
+}
+
+/*Courses styling - still can't get the cards to be the right height*/
 
 #courses {
     background-color: lightgray;
@@ -144,21 +160,14 @@ header p {
 }
 
 #courses h1 {
-    padding-top: 2rem;
+    padding: 2rem 0;
 }
 
 #courses-container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1rem 3.5rem;
-    justify-content: center;
-}
-
-.courses-card {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    width: 33%;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    padding: 0 3.5rem 2rem 3.5rem;
+    gap: 2rem;
 }
 
 .courses-content {
@@ -167,10 +176,14 @@ header p {
     padding: 1rem 1rem 1.5rem 1rem;
 }
 
-/*Thesis styling still need to check padding*/
+.courses {
+    padding: 0.5rem 0;
+}
+
+/*Thesis styling*/
 
 #thesis h1 {
-    padding-top: 2rem;
+    padding: 1rem 0;
     text-align: center;
 }
 
@@ -191,16 +204,12 @@ header p {
     padding-bottom: 2rem;
 }
 
-#thesis-left h3 {
-    padding-bottom: 1.5rem;
-}
-
 #thesis-right {
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
     width: 40%;
-    padding: 2rem 1.5rem 2rem 0;
+    padding: 2rem 0;
 }
 
 #thesis-right figure {
